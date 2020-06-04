@@ -19,7 +19,10 @@
 # the Free Software Foundation, Inc., 51 Franklin Street,
 # Boston, MA 02110-1301, USA.
 #
+"""
+Primer comentario
 
+"""
 from gnuradio import gr, gru, audio
 from gnuradio import eng_notation
 from gnuradio.eng_option import eng_option
