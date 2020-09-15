@@ -1,0 +1,84 @@
+\documentclass[xcolor=table,usenames,dvipsnames]{beamer}
+
+\usepackage[british]{babel}
+\usepackage{courier}
+\usepackage{xcolor}
+\usepackage{mdframed}
+\usepackage[utf8]{inputenc}
+\usepackage{multicol,calc}
+\usepackage{ragged2e} 
+\usepackage{menukeys}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{setspace} %espaciado
+\usepackage{etoolbox} %color bibliografía
+\usepackage{wrapfig} %imagen alrededor texto
+\usepackage{ajustes}
+
+
+
+\title[Modulación Digital con SDR]{
+	Modulación Digital con SDR}
+
+\author[Ingeniería Electrónica]{Creación Colectiva\\
+	\tiny 
+	IPA2020\\
+	Riaño Walter, Barragan Wilmar,Montana Camilo, Giraldo Martin, Alfonso Andres, Hellcenk Murillo, Cifuentes Jorge, Lizcano Gonzalo, Marín Laura, Torres Omar, Guayara Camila, Firigua Lorena\\
+	\scriptsize
+	Tutor\\ Rodríguez Mújica Leonardo}
+
+\institute[Universidad de Cundinamarca]{
+	Facultad de Ingeniería\\
+	Universidad de Cundinamarca}
+
+\date{2020}
+
+%-----------------------------------
+
+\begin{document}
+	
+	%espaciado item
+	\let\olditemize\itemize
+	\def\itemize{\olditemize\itemsep=4pt }
+	\footnotesize
+	
+	\begin{frame}
+	\titlepage
+\end{frame}
+%-----------------------------------
+
+\begin{frame}
+\frametitle{Contenidos generales}
+\tableofcontents[subsectionstyle=hide/hide, subsubsectionstyle=hide/hide]
+\end{frame}
+%-----------------------------------
+
+
+%-----------------------------------
+
+%\input{parte1/SDR-I}
+
+%/////////////////////////
+
+%\input{parte2/SDR-II}
+
+%/////////////////////////
+
+%\input{parte3/SDR-III}
+
+%/////////////////////////
+
+\input{Modulaciones_digitales/SDR-IV}
+
+%/////////////////////////
+\input{bibliografia/bibliografia.tex}
+
+%/////////////////////////
+
+%\input{soluciones/soluciones}
+
+
+
+
+\end{document}
