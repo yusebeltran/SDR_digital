@@ -6,7 +6,16 @@
 
 a_svg = $(patsubst %.svg,%.pdf,$(wildcard *.svg))
 
-dirs = Modulaciones_digitales/lab17/svg Modulaciones_digitales/lab18/svg Modulaciones_digitales/lab19/svg Modulaciones_digitales/lab20/svg Modulaciones_digitales/lab21/svg Modulaciones_digitales/lab22/svg 
+dirs = Modulaciones_digitales/lab17/svg \
+       Modulaciones_digitales/lab18/svg \
+       Modulaciones_digitales/lab19/svg \
+       Modulaciones_digitales/lab20/svg \
+       Modulaciones_digitales/lab21/svg \
+       Modulaciones_digitales/lab22/svg \
+       Modulaciones_digitales/lab23/svg \
+       Modulaciones_digitales/lab24/svg \
+       Modulaciones_digitales/lab25/svg 
+
 #dirs = parte3/lab8/svg 
 .PHONY: 
 
