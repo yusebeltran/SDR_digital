@@ -12,14 +12,14 @@ todo: $(asvg) $(apng)
 
 
 ../pdf/%.pdf: %.svg
-	@echo ---- Generando el $@ con $< ...
-	inkscape -D -A $@ $<
-	#mv $@ ../pdf
+	@echo ---- Generando el archivo: $@ a partir de: $< ...
+	@[ -d ../pdf ] || mkdir -v ../pdf 
+	@inkscape -D -A $@ $<
 
 ../pdf/%.pdf: %.png
-	@echo ---- Generando el $@ con $< ...
-	inkscape -D -A $@ $<
-	#mv $@ ../pdf
+	@echo ---- Generando el archivo: $@ a partir de: $< ...
+	@[ -d ../pdf ] || mkdir -v ../pdf 
+	@inkscape -D -A $@ $<
 
 clean:
 	@echo  Borrando: $(asvg)
