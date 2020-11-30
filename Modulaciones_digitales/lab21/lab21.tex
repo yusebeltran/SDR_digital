@@ -14,8 +14,7 @@
 \begin{frame}{Filter taps}
 Taps
 \begin{flushleft}
-El parámetro Taps indica las secciones de un filtro FIR que emula un retardo con múltiples trayectos.
-Uno de los parámetros más importantes  para este bloque son los coeficientes (taps) del filtro. Uno de los beneficios de implementación del bloque es que usted puede definir el filtro acoplado directamente en este bloque, lo que permite tener el filtro acoplado y la corrección de tiempo de muestreo de manera simultánea.
+El parámetro Taps indica las secciones de un filtro FIR el cual emula un retardo con múltiples trayectos. Uno de los parámetros mas importantes de este bloque son los coeficientes Taps pertenecientes al filtro. Uno de los beneficios de implementación del bloque es el poder definir el filtro acoplado directamente en este bloque, lo cual permitirá tener tanto el filtro acoplado como la corrección de tiempo de muestreo de manera simultánea. 
 \end{flushleft}
 \end{frame}
 
@@ -32,7 +31,8 @@ Uno de los parámetros más importantes  para este bloque son los coeficientes (
 \begin{frame}{Filter taps}
 FIR Decimating
 \begin{flushleft}
-Este es un bloque que permite cargar toques de filtro desde un archivo (desde la herramienta de diseño de filtro).El nombre FIR viene de la manera en que el filtro afecta una señal. Una función impulso es una entrada bastante interesante, donde la señal es 0 siempre, excepto en un lugar donde tiene valor de 1.
+Este bloque permite cargar toques de filtro desde un archivo (herramienta de diseño de filtro). El nombre FIR proviene de la manera en la que el filtro afecta una señal.
+Una función de impulso permite evidenciar que la señal es cero (0) siempre, excepto en algunos lugares donde se podrá observar que esta tendrá valor de uno (1). 
 \end{flushleft}
 \end{frame}
 
@@ -84,7 +84,20 @@ Este es un bloque que permite cargar toques de filtro desde un archivo (desde la
 \includegraphics[width=\textwidth]{Modulaciones_digitales/lab21/pdf/lab21_6.pdf}
 \end{figure}
 \end{frame}
+%*********************
 
+\begin{frame}{Filter taps}
+PASOS PARA OBTENER LA FRECUENCIA DE CORTE EN CADA FILTRO
+\begin{flushleft}
+1.	Lo primero que se debe tener en cuenta es el nivel máximo  (en dB’s) de la señal.
+2.	Según la teoría la señal se encuentra a la mitad de su potencia cuando gráficamente este disminuye 3 dB’s.
+3.	Se debe activar el rango de Average en el WX GUI FFT sink  con el valor mínimo.
+4.	Seguido de eso podremos observar la frecuencia en la que se encuentra la señal en el momento de medir estos -3 dB’s.
+5.	Tomar esa frecuencia como la frecuencia de corte inicial, final, o ambas según el filtro que se este utilizando. 
+\end{flushleft}
+\end{frame}
+
+%*********************
 
 
 
