@@ -1,4 +1,5 @@
-\subsection{Lab21:Filter taps}
+\pgfdeclareimage[width=\paperwidth,height=\paperheight]{bg}{imagenes/fondo_lab}
+\setbeamertemplate{background}{\pgfuseimage{bg}}\subsection{Lab21: Filter taps}
 
 %*********************
 \begin{frame}{}
@@ -11,6 +12,9 @@
 \end{frame}
 %*********************
 
+
+\pgfdeclareimage[width=\paperwidth,height=\paperheight]{bg}{imagenes/fondo3}
+\setbeamertemplate{background}{\pgfuseimage{bg}}
 \begin{frame}{Filter taps}
 Taps
 \begin{flushleft}
@@ -89,10 +93,10 @@ Una función de impulso permite evidenciar que la señal es cero (0) siempre, ex
 \begin{frame}{Filter taps}
 PASOS PARA OBTENER LA FRECUENCIA DE CORTE EN CADA FILTRO
 \begin{flushleft}
-1.	Lo primero que se debe tener en cuenta es el nivel máximo  (en dB’s) de la señal.
-2.	Según la teoría la señal se encuentra a la mitad de su potencia cuando gráficamente este disminuye 3 dB’s.
-3.	Se debe activar el rango de Average en el WX GUI FFT sink  con el valor mínimo.
-4.	Seguido de eso podremos observar la frecuencia en la que se encuentra la señal en el momento de medir estos -3 dB’s.
+1.	Lo primero que se debe tener en cuenta es el nivel máximo  (en dB’s) de la señal.\\
+2.	Según la teoría la señal se encuentra a la mitad de su potencia cuando gráficamente este disminuye 3 dB’s.\\
+3.	Se debe activar el rango de Average en el WX GUI FFT sink  con el valor mínimo.\\
+4.	Seguido de eso podremos observar la frecuencia en la que se encuentra la señal en el momento de medir estos -3 dB’s.\\
 5.	Tomar esa frecuencia como la frecuencia de corte inicial, final, o ambas según el filtro que se este utilizando. 
 \end{flushleft}
 \end{frame}
